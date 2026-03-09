@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Proyecto Muro">
+  <meta name="description" content="Paga $5 y pego tu anuncio, meme o mensaje en mi pared real. Lo grabo en un Reel de Instagram. Espacios limitados.">
+  <meta name="keywords" content="proyecto muro, publicidad creativa, anuncio por $5, wall advertising, instagram reel, meme en pared">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#ffd814">
+  <link rel="canonical" href="https://minilux0.github.io/Proyecto_Muro/">
+
+  <!-- OG / Social Preview -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://minilux0.github.io/Proyecto_Muro/">
+  <meta property="og:title"       content="Proyecto Muro — Paga $5 y tu anuncio va en mi pared">
+  <meta property="og:description" content="Compra un espacio en mi pared por $5. Lo imprimo, lo pego y lo grabo en Instagram.">
+  <meta property="og:image"       content="https://minilux0.github.io/Proyecto_Muro/images/preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale"     content="es_ES">
+  <meta property="og:site_name"  content="Proyecto Muro">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:site"        content="@proyecto_muro">
+  <meta name="twitter:title"       content="Proyecto Muro — $5 y tu anuncio va en mi pared real">
+  <meta name="twitter:description" content="Compra un espacio en mi pared. Lo imprimo y lo grabo en Instagram.">
+  <meta name="twitter:image"       content="https://minilux0.github.io/Proyecto_Muro/images/preview.jpg">
+
+  <title>Proyecto Muro — Paga $5 y tu anuncio va en mi pared real</title>
+
+  <!-- Favicons + PWA -->
+  <link rel="icon"             type="image/png" sizes="64x64"   href="./images/favicon.png">
+  <link rel="icon"             type="image/png" sizes="32x32"   href="./images/favicon_32.png">
+  <link rel="icon"             type="image/png" sizes="16x16"   href="./images/favicon_16.png">
+  <link rel="apple-touch-icon" sizes="180x180"                  href="./images/apple-touch-icon.png">
+  <link rel="manifest"                                           href="./manifest.json">
+
+  <!-- Preload fuentes críticas para evitar FOUT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  </noscript>
+
+  <link rel="stylesheet" href="./css/estilos.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Espacio en el muro — Proyecto Muro",
+    "description": "Compra un espacio en mi pared real por $5. Tu anuncio se imprime en A4, se pega en la pared y aparece en un Reel de Instagram.",
+    "url": "https://minilux0.github.io/Proyecto_Muro/",
+    "image": "https://minilux0.github.io/Proyecto_Muro/images/preview.jpg",
+    "offers": {
+      "@type": "Offer",
+      "price": "5.00",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/LimitedAvailability",
+      "url": "https://buymeacoffee.com/proyecto_muro"
+    },
+    "brand": {
+      "@type": "Brand",
+      "name": "Proyecto Muro"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Cursor personalizado -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursor-follower" aria-hidden="true"></div>
+  <!-- ═══ HEADER / NAV ═══ -->
+  <header class="header">
+    <nav class="nav">
+
+      <!-- Logo -->
+      <a href="#" class="nav__logo" aria-label="Proyecto Muro — inicio">
+        <img src="./images/favicon.png" alt="" class="nav__logo-img" aria-hidden="true" width="32" height="32">
+        <span class="nav__logo-text">Proyecto Muro</span>
+      </a>
+
+      <!-- Toggle (solo móvil) -->
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu" type="button">
+        <span class="nav__burger" aria-hidden="true">☰</span>
+        <span class="nav__close" aria-hidden="true">✕</span>
+      </button>
+
+      <!-- Menu -->
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="#como-funciona" class="nav__link">Cómo funciona</a></li>
+          <li><a href="#el-muro"       class="nav__link">El muro</a></li>
+          <li><a href="#precios"       class="nav__link">Precios</a></li>
+          <li><a href="#faq"           class="nav__link">FAQ</a></li>
+          <li><a href="https://www.instagram.com/proyecto_muro/" target="_blank" rel="noopener noreferrer" class="nav__link">Instagram</a></li>
+          <li><a href="#contacto"      class="nav__link">Contacto</a></li>
+          <li>
+            <a href="https://buymeacoffee.com/proyecto_muro?amount=5" target="_blank" rel="noopener noreferrer" class="nav__cta">
+              ☕ Poner mi anuncio — $5
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="hero">
+      <div class="hero-inner">
+
+        <!-- Columna izquierda: texto -->
+        <div class="hero-text" id="hero-parallax">
+          <p class="eyebrow hero-anim" style="--d:0">Pared real · Instagram · Espacios limitados</p>
+          <h1>
+            <span class="hero-anim" style="--d:1">Paga</span>
+            <em class="hero-anim" style="--d:2">$5</em>
+            <span class="hero-anim" style="--d:3">y tu anuncio va</span>
+            <span class="hero-anim" style="--d:4">en mi pared.</span>
+          </h1>
+          <p class="hero-sub hero-anim" style="--d:5">Me envías lo que quieras — tu red social, un meme, tu negocio, un mensaje — y yo lo imprimo en A4 y lo pego en mi pared real. Luego lo grabo en Instagram.</p>
+          <div class="hero-actions hero-anim" style="--d:6">
+            <a href="https://buymeacoffee.com/proyecto_muro?amount=5" target="_blank" rel="noopener noreferrer" class="btn-primary">
+              ☕ Comprar espacio
+            </a>
+            <a href="#como-funciona" class="btn-ghost">Ver cómo funciona ↓</a>
+          </div>
+        </div>
+
+        <!-- Columna derecha: ticket -->
+        <div class="ticket-wrap hero-anim" style="--d:5">
+          <div class="ticket">
+            <div class="ticket-top-strip"></div>
+            <div class="ticket-header">
+              <span class="ticket-brand">PROYECTO MURO</span>
+              <span class="ticket-num">#000006</span>
+            </div>
+            <div class="ticket-perf"></div>
+            <p class="ticket-title">Espacio en el muro</p>
+            <div class="ticket-details">
+              <div class="ticket-row">
+                <span class="tk">Formato</span>
+                <span class="tk-dots"></span>
+                <span class="tv">A4 (21×29cm)</span>
+              </div>
+              <div class="ticket-row">
+                <span class="tk">Soporte</span>
+                <span class="tk-dots"></span>
+                <span class="tv">Pared real</span>
+              </div>
+              <div class="ticket-row">
+                <span class="tk">Plataforma</span>
+                <span class="tk-dots"></span>
+                <span class="tv">Instagram Reel</span>
+              </div>
+              <div class="ticket-row">
+                <span class="tk">Entrega</span>
+                <span class="tk-dots"></span>
+                <span class="tv">24 – 48 h</span>
+              </div>
+              <div class="ticket-row">
+                <span class="tk">Contenido</span>
+                <span class="tk-dots"></span>
+                <span class="tv">Lo que quieras</span>
+              </div>
+            </div>
+            <div class="ticket-perf"></div>
+            <div class="ticket-total">
+              <span class="ticket-total-label">TOTAL</span>
+              <span class="ticket-total-price">$5 <small>USD</small></span>
+            </div>
+            <div class="ticket-perf"></div>
+            <a href="https://buymeacoffee.com/proyecto_muro?amount=5" target="_blank" rel="noopener noreferrer" class="ticket-cta">
+              Comprar espacio →
+            </a>
+            <div class="ticket-barcode" aria-hidden="true"></div>
+            <p class="ticket-remaining">Quedan <strong id="t-remaining">—</strong> espacios</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══ TICKER ═══ -->
+    <div class="ticker-wrap" aria-hidden="true">
+      <div class="ticker">
+        <span class="ti">Pared real en una habitación</span>
+        <span class="ti">Tu anuncio impreso en A4</span>
+        <span class="ti">Aparece en un Reel de Instagram</span>
+        <span class="ti">Solo $5 USD</span>
+        <span class="ti">Espacios limitados</span>
+        <span class="ti">Anuncio · Meme · Mensaje · Red social</span>
+        <span class="ti">Cualquier idea vale</span>
+        <span class="ti">Pared real en una habitación</span>
+        <span class="ti">Tu anuncio impreso en A4</span>
+        <span class="ti">Aparece en un Reel de Instagram</span>
+        <span class="ti">Solo $5 USD</span>
+        <span class="ti">Espacios limitados</span>
+        <span class="ti">Anuncio · Meme · Mensaje · Red social</span>
+        <span class="ti">Cualquier idea vale</span>
+      </div>
+    </div>
+
+    <!-- ═══ CÓMO FUNCIONA ═══ -->
+    <section class="how scroll-section" id="como-funciona" data-scroll="fade-up">
+      <div class="container">
+        <div class="how-header reveal">
+          <span class="label">El proceso</span>
+          <h2>Simple. Real. Tuyo.</h2>
+        </div>
+        <div class="how-steps">
+          <div class="step reveal">
+            <span class="step-bg-num" aria-hidden="true">01</span>
+            <div class="step-content">
+              <h3>Paga $5 en Buy Me a Coffee</h3>
+              <p>Entra al link, paga $5 USD. Luego envíame tu anuncio o imagen por Instagram.</p>
+            </div>
+          </div>
+          <div class="step reveal" style="transition-delay:.08s">
+            <span class="step-bg-num" aria-hidden="true">02</span>
+            <div class="step-content">
+              <h3>Imprimo tu anuncio en A4</h3>
+              <p>Recibo tu imagen y la imprimo en papel tamaño A4. Si pagas $10 o más, el espacio es más grande.</p>
+            </div>
+          </div>
+          <div class="step reveal" style="transition-delay:.16s">
+            <span class="step-bg-num" aria-hidden="true">03</span>
+            <div class="step-content">
+              <h3>Lo pego en mi pared real</h3>
+              <p>Tu anuncio va directo a la pared de mi cuarto. La pared se llena con los anuncios de todos.</p>
+            </div>
+          </div>
+          <div class="step reveal" style="transition-delay:.24s">
+            <span class="step-bg-num" aria-hidden="true">04</span>
+            <div class="step-content">
+              <h3>Lo grabo en un Reel de Instagram</h3>
+              <p>Grabo un Reel mostrando el nuevo anuncio en el muro. Tu idea aparece en mi cuenta de Instagram.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tags de contenido -->
+        <div class="what-tags reveal">
+          <p class="what-label">¿Qué puedes poner?</p>
+          <div class="tags-wrap">
+            <span class="tag hot">Tu red social</span>
+            <span class="tag hot">Un anuncio</span>
+            <span class="tag hot">Un meme</span>
+            <span class="tag">Tu nombre</span>
+            <span class="tag">Un proyecto</span>
+            <span class="tag">Tu negocio</span>
+            <span class="tag">Una frase</span>
+            <span class="tag">Un mensaje</span>
+            <span class="tag">Arte random</span>
+            <span class="tag hot">Lo que se te ocurra</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ ANUNCIOS — MURO FÍSICO + WEB ═══ -->
+    <section class="recent-section scroll-section" id="el-muro" data-scroll="fade-up">
+      <div class="container">
+
+        <div class="recent-header">
+          <div>
+            <span class="label">En el muro ahora</span>
+            <h2>Últimos<br>anuncios.</h2>
+          </div>
+          <a href="https://www.instagram.com/proyecto_muro/" target="_blank" rel="noopener noreferrer" class="btn-ghost">
+            Ver todos en Instagram →
+          </a>
+        </div>
+
+        <!-- Tabs -->
+        <div class="muro-tabs" role="tablist" aria-label="Ver anuncios">
+          <button class="muro-tab muro-tab--active" role="tab" aria-selected="true"
+                  aria-controls="tab-fisico" id="btn-fisico" data-tab="fisico">
+            📌 Muro físico
+          </button>
+          <button class="muro-tab" role="tab" aria-selected="false"
+                  aria-controls="tab-web" id="btn-web" data-tab="web">
+            🌐 Muro web
+            <span class="tab-badge">Nuevo</span>
+          </button>
+        </div>
+
+        <!-- Panel: Muro físico -->
+        <div id="tab-fisico" role="tabpanel" aria-labelledby="btn-fisico" class="tab-panel tab-panel--active">
+          <div class="poster-grid reveal">
+            <div class="poster-card poster-tilt">
+              <div class="poster-face poster-face--img">
+                <img src="./images/poster1.jpg" alt="Anuncio en el muro" loading="lazy">
+                <div class="poster-shine"></div>
+              </div>
+              <div class="poster-foot">
+                <span class="poster-user">@proyecto_muro</span>
+                <span class="poster-time">Hoy</span>
+              </div>
+            </div>
+            <div class="poster-card poster-tilt">
+              <div class="poster-face poster-face--img">
+                <img src="./images/poster2.jpg" alt="Anuncio en el muro" loading="lazy">
+                <div class="poster-shine"></div>
+              </div>
+              <div class="poster-foot">
+                <span class="poster-user">@proyecto_muro</span>
+                <span class="poster-time">Ayer</span>
+              </div>
+            </div>
+            <div class="poster-card poster-tilt">
+              <div class="poster-face poster-face--img">
+                <img src="./images/poster3.jpg" alt="Anuncio en el muro" loading="lazy">
+                <div class="poster-shine"></div>
+              </div>
+              <div class="poster-foot">
+                <span class="poster-user">@proyecto_muro</span>
+                <span class="poster-time">Hace 2 días</span>
+              </div>
+            </div>
+            <div class="poster-card poster-tilt">
+              <div class="poster-face poster-face--img">
+                <img src="./images/poster4.jpg" alt="Anuncio en el muro" loading="lazy">
+                <div class="poster-shine"></div>
+              </div>
+              <div class="poster-foot">
+                <span class="poster-user">@proyecto_muro</span>
+                <span class="poster-time">Hace 3 días</span>
+              </div>
+            </div>
+            <!-- Espacio libre -->
+            <div class="poster-card poster-empty">
+              <div class="poster-face poster-face-empty">
+                <div class="empty-plus">+</div>
+                <div class="empty-lbl">Espacio libre</div>
+              </div>
+              <div class="poster-foot">
+                <a href="https://buymeacoffee.com/proyecto_muro?amount=5" target="_blank" rel="noopener noreferrer" class="btn-primary btn-primary--sm btn-primary--full">
+                  Ocuparlo — $5
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel: Muro web (dinámico desde anuncios.js) -->
+        <div id="tab-web" role="tabpanel" aria-labelledby="btn-web" class="tab-panel" hidden>
+          <p class="web-ads-note">
+            Estos 4 espacios aparecen en esta página en cada visita.
+            Los anuncios <strong>★ Premium</strong> ocupan los slots superiores fijos.
+            Los <strong>Web</strong> rotan aleatoriamente abajo.
+          </p>
+          <div class="poster-grid reveal" id="ad-grid"></div>
+          <div class="web-ads-cta">
+            <a href="#precios" class="btn-ghost">Ver precios de anuncio web →</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══ FOTO REAL DEL MURO ═══ -->
+    <section class="wall-real">
+      <div class="container">
+        <div class="wall-real-inner reveal">
+          <div class="wall-real-text">
+            <span class="label">La pared</span>
+            <h2>Esta es<br>la pared.</h2>
+            <p>Todo empieza aquí. Cada nuevo anuncio se imprime en A4 y se pega en esta pared real. La pared crece con cada persona que se une.</p>
+            <a href="https://buymeacoffee.com/proyecto_muro?amount=5" target="_blank" rel="noopener noreferrer" class="btn-primary" style="margin-top:1.5rem;">
+              Ocupar un espacio — $5
+            </a>
+          </div>
+          <div class="wall-real-img-wrap">
+            <img
+              src="./images/muro-real.jpg"
+              alt="Pared real del Proyecto Muro"
+              class="wall-real-img"
+              loading="lazy"
+            >
+            <div class="wall-real-placeholder">
+              <span class="placeholder-icon">📸</span>
+              <p>Foto próximamente</p>
+              <small>Sigue en <a href="https://www.instagram.com/proyecto_muro/" target="_blank" rel="noopener noreferrer">@proyecto_muro</a></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ POR QUÉ EXISTE ═══ -->
+    <section class="why-section scroll-section" data-scroll="fade-right">
+      <div class="container">
+        <div class="why-inner reveal">
+          <div class="why-left">
+            <span class="label">El experimento</span>
+            <h2>¿Por qué<br>existe esto?</h2>
+          </div>
+          <div class="why-right">
+            <p class="why-big">Estoy llenando una pared real con anuncios de internet.</p>
+            <p class="why-p">Vi en Instagram que alguien hacía esto y pensé: ¿qué pasa si una pared de una habitación se convierte en un tablón público de internet? Cada persona que paga $5 deja su huella física en el muro.</p>
+            <p class="why-p">No es publicidad tradicional. Es un experimento social. Es arte. Es random. Y tú puedes ser parte.</p>
+            <p class="why-p">Inspirado en The Million Dollar Homepage — pero esta vez es una pared real, en una habitación real, y cualquiera puede ser parte por $5.</p>
+            <a href="https://www.instagram.com/proyecto_muro/" target="_blank" rel="noopener noreferrer" class="btn-ghost" style="margin-top:1.5rem;">
+              Ver el muro en Instagram →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CONTADOR ═══ -->
+    <section class="counter-section scroll-section" data-scroll="fade-left">
+      <div class="container">
+        <div class="counter-inner reveal">
+          <div class="counter-text">
+            <span class="label">Disponibilidad</span>
+            <h2>Espacios en<br>el muro.</h2>
+            <p>La pared tiene espacio físico limitado. Cuando se llena, se llena. Estos son los espacios disponibles hoy.</p>
+          </div>
+          <div class="counter-box">
+            <div class="counter-numbers">
+              <span class="counter-occupied" id="occupied">5</span>
+              <span class="counter-sep">/</span>
+              <span class="counter-total-num">120</span>
+              <span class="counter-lbl">espacios ocupados</span>
+            </div>
+            <div class="counter-bar">
+              <div class="counter-fill"></div>
+            </div>
+            <p class="counter-remaining">Quedan <strong id="remaining">—</strong> espacios disponibles.</p>
+            <p class="counter-urgency">Se agregan máximo <strong>10 anuncios por semana.</strong></p>
+            <a href="https://buymeacoffee.com/proyecto_muro?amount=5" target="_blank" rel="noopener noreferrer" class="btn-primary btn-primary--full" style="margin-top:1.5rem;">
+              Ocupar mi espacio — $5
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ PRECIOS ═══ -->
+    <section class="pricing" id="precios">
+      <div class="container">
+        <div class="pricing-header reveal">
+          <span class="label">Precios</span>
+          <h2>Elige tu espacio.</h2>
+          <p class="pricing-subtitle">Pared real o página web. Elige dónde aparecer.</p>
+        </div>
+
+        <!-- Grupo: Muro físico -->
+        <div class="pricing-group-label reveal">
+          <span>📌 Muro físico</span>
+        </div>
+        <div class="pricing-grid reveal">
+
+          <div class="price-card">
+            <p class="price-label">Espacio A4</p>
+            <div class="price-amount"><sup>$</sup>5 <span class="price-cur">USD</span></div>
+            <p class="price-desc">Un espacio en el muro. Tu anuncio impreso en A4 y pegado en la pared real.</p>
+            <ul class="price-features">
+              <li>Impresión tamaño <strong>A4</strong></li>
+              <li>Pegado en la pared real</li>
+              <li>Aparece en un <strong>Reel de Instagram</strong></li>
+              <li>Puede ser cualquier cosa</li>
+              <li>Espacios limitados por día</li>
+            </ul>
+            <a href="https://buymeacoffee.com/proyecto_muro?amount=5" target="_blank" rel="noopener noreferrer" class="price-cta">
+              Comprar espacio — $5 →
+            </a>
+          </div>
+
+          <div class="price-card price-card--featured">
+            <span class="price-badge">Más espacio</span>
+            <p class="price-label">Espacio Grande</p>
+            <div class="price-amount"><sup>$</sup>10 <span class="price-cur">USD</span></div>
+            <p class="price-desc">Más grande, más visible. Mayor protagonismo en el muro y en el Reel.</p>
+            <ul class="price-features">
+              <li>Impresión en <strong>formato grande</strong></li>
+              <li>Mayor visibilidad en el muro</li>
+              <li>Aparece en un <strong>Reel de Instagram</strong></li>
+              <li>Diseño con más detalle si lo necesitas</li>
+              <li>Posición destacada en la pared</li>
+            </ul>
+            <a href="https://buymeacoffee.com/proyecto_muro?amount=10" target="_blank" rel="noopener noreferrer" class="price-cta price-cta--featured">
+              Comprar espacio — $10 →
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Grupo: Muro web -->
+        <div class="pricing-group-label pricing-group-label--web reveal">
+          <span>🌐 Muro web — tu imagen en esta página</span>
+        </div>
+        <div class="pricing-grid reveal">
+
+          <div class="price-card">
+            <span class="price-badge price-badge--web">Web</span>
+            <p class="price-label">Anuncio Web</p>
+            <div class="price-amount"><sup>$</sup>8 <span class="price-cur">USD/mes</span></div>
+            <p class="price-desc">Tu imagen aparece en la grilla de esta página, clickeable a tu perfil o web.</p>
+            <ul class="price-features">
+              <li>Tu imagen <strong>en esta página</strong></li>
+              <li>Link clickeable a donde quieras</li>
+              <li>Rotación aleatoria entre visitantes</li>
+              <li>1 cambio de imagen incluido/mes</li>
+              <li>Cambios extra: <strong>$5 c/u</strong></li>
+            </ul>
+            <a href="https://buymeacoffee.com/proyecto_muro?amount=8" target="_blank" rel="noopener noreferrer" class="price-cta">
+              Anunciar en la web — $8 →
+            </a>
+          </div>
+
+          <div class="price-card price-card--premium">
+            <span class="price-badge price-badge--premium">★ Premium</span>
+            <p class="price-label">Anuncio Premium Fijo</p>
+            <div class="price-amount"><sup>$</sup>15 <span class="price-cur">USD/mes</span></div>
+            <p class="price-desc">Slot fijo garantizado. Tu imagen aparece siempre en los dos espacios superiores.</p>
+            <ul class="price-features">
+              <li><strong>Slot fijo</strong> — no rota, siempre visible</li>
+              <li>Posición superior garantizada</li>
+              <li>Link clickeable a donde quieras</li>
+              <li>1 cambio de imagen incluido/mes</li>
+              <li>Cambios extra: <strong>$5 c/u</strong></li>
+            </ul>
+            <a href="https://buymeacoffee.com/proyecto_muro?amount=15" target="_blank" rel="noopener noreferrer" class="price-cta price-cta--featured">
+              Slot Premium — $15 →
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ FAQ ═══ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="faq-inner">
+          <div class="faq-sidebar reveal">
+            <span class="label">Preguntas</span>
+            <h2>¿Tienes<br>dudas?</h2>
+            <p>Si no encuentras tu respuesta, escríbeme directo en Instagram.</p>
+            <a href="https://www.instagram.com/proyecto_muro/" target="_blank" rel="noopener noreferrer" class="btn-ghost" style="margin-top:1.5rem;display:inline-flex;">
+              @proyecto_muro →
+            </a>
+          </div>
+
+          <div class="faq-list reveal" style="transition-delay:.1s">
+
+            <!-- ══ 📌 MURO FÍSICO ══ -->
+            <div class="faq-group-label">📌 Sobre el muro físico</div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                <span>¿Qué es el Proyecto Muro?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a">
+                <p>Es una pared física donde cualquier persona puede publicar imágenes, arte, mensajes o ideas. Cada publicación se imprime en A4 y se coloca en la pared real, formando una galería colectiva creada por la comunidad de internet.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                <span>¿Cuánto tiempo permanece mi imagen en el muro?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a">
+                <p>Las imágenes permanecen en el muro hasta que el espacio se llena o se realiza una renovación del mural. Dependiendo del flujo de publicaciones, tu imagen puede durar semanas o meses.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                <span>¿Mi publicación será anónima?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a">
+                <p>Vos decidís. Podés enviar tu imagen de forma anónima o incluir tu nombre, alias o usuario de redes si querés que se te reconozca.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                <span>¿Cuál es la diferencia entre $5 y $10?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a">
+                <p>Con $5 tu anuncio va en A4 (21×29cm). Con $10 el espacio es más grande, más visible en el muro y tiene más protagonismo en el Reel de Instagram.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                <span>¿Puedo poner un QR en mi anuncio?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a">
+                <p>Sí. Podés incluir un QR que lleve a tu web, Instagram, tienda o cualquier proyecto. Es una de las formas más efectivas de aprovechar el espacio físico.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                <span>¿Los espacios son realmente limitados?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a">
+                <p>Sí. La pared tiene espacio físico real y limitado. Solo se agregan algunos anuncios por semana. Si querés un lugar, mejor reservar pronto.</p>
+              </div>
+            </div>
+
+            <!-- ══ 💳 PROCESO DE COMPRA ══ -->
+            <div class="faq-group-label faq-group-label--process">💳 Proceso de compra</div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                <span>¿Cómo funciona el proceso completo?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a">
+                <p>
+                  <strong>1. Pagás</strong> — entrás a Buy Me a Coffee y pagás $5 (A4) o $10 (grande).<br>
+                  <strong>2. Me escribís</strong> — por DM en Instagram a <strong>@proyecto_muro</strong> con tu imagen o idea.<br>
+                  <strong>3. Revisamos</strong> — verificamos que el contenido cumpla las reglas.<br>
+                  <strong>4. Lo imprimimos y pegamos</strong> — en 24-48hs tu anuncio está en la pared real.<br>
+                  <strong>5. Grabamos el Reel</strong> — aparece en Instagram con tu espacio ocupado.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                <span>¿Qué formato tiene que tener mi imagen?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a">
+                <p>JPG o PNG, alta resolución, proporción cuadrada o vertical. Esto asegura que la impresión se vea bien en el muro. Si tenés dudas con el diseño, escribime y lo vemos juntos.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                <span>¿Cuánto tarda en aparecer mi imagen?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a">
+                <p>Normalmente entre 24 y 48 horas después de que me enviés tu imagen. Los espacios se ocupan en orden de llegada.</p>
+              </div>
+            </div>
+
+            <!-- ══ ⚠️ REGLAS DE CONTENIDO ══ -->
+            <div class="faq-group-label faq-group-label--rules">⚠️ Reglas de contenido</div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                <span>¿Qué <em>no</em> se puede publicar?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a">
+                <p>Para mantener el proyecto abierto y seguro, <strong>no se acepta</strong> contenido sexual explícito o +18, violencia extrema, discurso de odio, contenido ilegal, acoso a personas ni material con derechos de autor sin permiso.<br><br>
+                Si una imagen no cumple las reglas, puede ser rechazada sin publicación. Ante la duda, consultame antes de pagar.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                <span>¿Quién decide qué se publica?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a">
+                <p>Yo reviso cada imagen antes de imprimirla. La intención no es censurar creatividad, sino mantener el espacio abierto y seguro para todos. Si tu idea es borderline, escribime primero y lo evaluamos.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                <span>¿Pueden retirar mi publicación del muro?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a">
+                <p>Sí. Si una publicación viola las reglas o genera problemas legales, puede retirarse del muro. Me reservo ese derecho para proteger el proyecto y a todos los participantes.</p>
+              </div>
+            </div>
+
+            <!-- ══ 🌐 MURO WEB ══ -->
+            <div class="faq-group-label faq-group-label--web">🌐 Sobre el muro web</div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                <span>¿Qué es el anuncio web?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a">
+                <p>Es un espacio en esta página web. Tu imagen aparece en la grilla de "Muro web" cada vez que alguien visita el sitio. Es clickeable — lleva directo a tu Instagram, tienda o cualquier link. A diferencia del muro físico, el anuncio web es mensual y digital.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                <span>¿Cuál es la diferencia entre Web ($8) y Premium ($15)?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a">
+                <p>El plan <strong>Web</strong> entra al sorteo aleatorio — tu imagen rota con otros anunciantes en cada visita. El plan <strong>Premium</strong> tiene un slot fijo garantizado arriba: tu imagen aparece en el 100% de las visitas, sin sorteo ni rotación.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                <span>¿Cuánto dura y qué pasa cuando vence?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a">
+                <p>El anuncio dura <strong>30 días</strong> desde que lo activo. Unos días antes del vencimiento te aviso por Instagram para renovar. Si no renovás, tu imagen deja de aparecer y el espacio queda libre.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                <span>¿Puedo cambiar la imagen después de publicar?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a">
+                <p>Sí. Cada plan incluye <strong>1 cambio de imagen por mes</strong>. Si necesitás cambiarla antes, el costo adicional es <strong>$5 por cambio</strong>. El diseño tiene que ser cuadrado (500×500px recomendado) en JPG o PNG.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CTA FINAL ═══ -->
+    <section class="cta-final scroll-section" data-scroll="zoom">
+      <div class="cta-final-inner reveal">
+        <span class="label">Espacios limitados</span>
+        <h2>Ocupa<br>tu espacio.</h2>
+        <p>$5 USD y tu anuncio va en mi pared real. Aparece en Instagram. Simple así.</p>
+        <a href="https://buymeacoffee.com/proyecto_muro?amount=5" target="_blank" rel="noopener noreferrer" class="btn-primary btn-primary--cta">
+          ☕ Comprar espacio en el muro
+        </a>
+      </div>
+    </section>
+
+  <!-- ═══ CONTACTO ═══ -->
+    <section class="contact-section" id="contacto">
+      <div class="container">
+        <div class="contact-inner reveal">
+          <div class="contact-left">
+            <span class="label">Contacto</span>
+            <h2>¿Tienes una<br>idea en mente?</h2>
+            <p>Escríbeme. Te respondo por email en menos de 24 horas.</p>
+            <a href="https://www.instagram.com/proyecto_muro/" target="_blank" rel="noopener noreferrer" class="btn-ghost" style="margin-top:1.5rem;display:inline-flex;">
+              O escríbeme en Instagram →
+            </a>
+          </div>
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/mwvrvlby"
+            method="POST"
+          >
+            <div class="form-group">
+              <label for="contact-name">Nombre</label>
+              <input
+                type="text"
+                id="contact-name"
+                name="name"
+                placeholder="Tu nombre"
+                required
+                autocomplete="name"
+              >
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input
+                type="email"
+                id="contact-email"
+                name="email"
+                placeholder="tu@email.com"
+                required
+                autocomplete="email"
+              >
+            </div>
+            <div class="form-group">
+              <label for="contact-msg">Mensaje</label>
+              <textarea
+                id="contact-msg"
+                name="message"
+                rows="4"
+                placeholder="¿Qué quieres poner en el muro?"
+                required
+              ></textarea>
+            </div>
+            <!-- Honeypot anti-spam -->
+            <input type="text" name="_gotcha" style="display:none">
+            <input type="hidden" name="_subject" value="Nuevo mensaje — Proyecto Muro">
+            <button type="submit" class="btn-primary form-submit">
+              Enviar mensaje →
+            </button>
+            <p class="form-status" id="form-status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+      </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Proyecto Muro</div>
+      <nav class="footer-links" aria-label="Pie de página">
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#precios">Precios</a>
+        <a href="#el-muro">El muro</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto">Contacto</a>
+        <a href="https://www.instagram.com/proyecto_muro/"     target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://buymeacoffee.com/proyecto_muro"       target="_blank" rel="noopener noreferrer">Buy Me a Coffee</a>
+      </nav>
+      <p class="footer-copy">© 2025 Proyecto Muro · Proyecto artístico independiente · No afiliado a Instagram</p>
+    </div>
+  </footer>
+
+  <!-- SCROLL TOP -->
+  <button id="top-btn" aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="./js/anuncios.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

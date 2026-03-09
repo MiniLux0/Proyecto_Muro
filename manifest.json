@@ -1,0 +1,19 @@
+{
+  "name": "Proyecto Muro",
+  "short_name": "Muro",
+  "description": "Paga $5 y tu anuncio va en mi pared real. Aparece en Instagram.",
+  "start_url": "/Proyecto_Muro/",
+  "scope": "/Proyecto_Muro/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#ffd814",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "./images/favicon_16.png",     "sizes": "16x16",   "type": "image/png" },
+    { "src": "./images/favicon_32.png",     "sizes": "32x32",   "type": "image/png" },
+    { "src": "./images/favicon.png",        "sizes": "64x64",   "type": "image/png" },
+    { "src": "./images/apple-touch-icon.png","sizes": "180x180","type": "image/png", "purpose": "any maskable" }
+  ],
+  "categories": ["business", "social"],
+  "lang": "es"
+}
