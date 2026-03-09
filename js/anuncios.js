@@ -74,7 +74,7 @@ const ADS_DB = [
   ══════════════════════════════════════════════════════════════ */
   {
     id:        "propio_01",
-    img:       "./images/poster1.jpg",
+    img:       "./images/poster1.webp",
     link:      "https://buymeacoffee.com/proyecto_muro?amount=5",
     alt:       "Compra un espacio en el muro — $5",
     user:      "Espacio libre — $5",
@@ -83,7 +83,7 @@ const ADS_DB = [
   },
   {
     id:        "propio_02",
-    img:       "./images/poster2.jpg",
+    img:       "./images/poster2.webp",
     link:      "https://www.instagram.com/proyecto_muro/",
     alt:       "Sígueme en Instagram @proyecto_muro",
     user:      "@proyecto_muro",
@@ -92,7 +92,7 @@ const ADS_DB = [
   },
   {
     id:        "propio_03",
-    img:       "./images/poster3.jpg",
+    img:       "./images/poster3.webp",
     link:      "https://buymeacoffee.com/proyecto_muro?amount=5",
     alt:       "Tu marca aquí — anuncio web",
     user:      "Tu marca aquí",
@@ -101,7 +101,7 @@ const ADS_DB = [
   },
   {
     id:        "propio_04",
-    img:       "./images/poster4.jpg",
+    img:       "./images/poster4.webp",
     link:      "https://buymeacoffee.com/proyecto_muro?amount=5",
     alt:       "Ocupa este espacio",
     user:      "Espacio disponible",
