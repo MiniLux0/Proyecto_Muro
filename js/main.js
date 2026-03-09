@@ -43,6 +43,17 @@ document.addEventListener('DOMContentLoaded', () => {
         navToggle.focus();
       }
     });
+
+    /* Reset overflow si se redimensiona a desktop con menú abierto */
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768 && navMenu.classList.contains('show-menu')) {
+        navMenu.classList.remove('show-menu');
+        navToggle.classList.remove('show-icon');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.setAttribute('aria-label', 'Abrir menú');
+        document.body.style.overflow = '';
+      }
+    }, { passive: true });
   }
 
   /* ── Header scroll class ── */
@@ -145,6 +156,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const cursorFollower = document.getElementById('cursor-follower');
 
   if (cursor && cursorFollower && window.matchMedia('(pointer: fine)').matches) {
+    /* Activar cursor custom — añade clase para que CSS oculte el cursor nativo */
+    document.body.classList.add('custom-cursor');
+
     let fx = 0, fy = 0;   // follower position
     let cx = 0, cy = 0;   // cursor position
 
@@ -165,11 +179,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     followCursor();
 
-    /* Hover en interactivos */
-    const interactives = 'a, button, [role="button"], input, textarea, select, label, .poster-tilt, .nav__toggle, .faq-q, .muro-tab, .price-cta, .btn-primary, .btn-ghost, .nav__cta, .ticket-cta, .tag';
-    document.querySelectorAll(interactives).forEach(el => {
-      el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
-      el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+    /* Hover en interactivos — delegado para cubrir elementos inyectados dinámicamente */
+    const HOVER_SELECTOR = 'a, button, [role="button"], input, textarea, select, label, .poster-tilt, .nav__toggle, .faq-q, .muro-tab, .price-cta, .btn-primary, .btn-ghost, .nav__cta, .ticket-cta, .tag';
+    document.addEventListener('mouseover', e => {
+      if (e.target.closest(HOVER_SELECTOR)) document.body.classList.add('cursor-hover');
+    });
+    document.addEventListener('mouseout', e => {
+      if (e.target.closest(HOVER_SELECTOR)) document.body.classList.remove('cursor-hover');
     });
 
     /* Ocultar al salir de la ventana */
